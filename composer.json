@@ -1,0 +1,12 @@
+{
+	"name": "bradp/colors",
+	"type": "wordpress-plugin",
+	"description": "Disable admin color schemes",
+	"license": "GPL-2.0-or-later",
+	"authors": [
+	  {
+		"name": "Brad Parbs",
+		"email": "brad@bradparbs.com"
+	  }
+	]
+}
