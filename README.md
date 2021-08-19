@@ -1,3 +1,2 @@
-# Colors - Disable admin color schemes
-
+# Colors
 A WordPress plugin to disable admin color schemes.
