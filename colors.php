@@ -2,11 +2,11 @@
 /**
  * Plugin Name: Colors
  * Description: Disable admin color schemes.
- * Version:     1.0.1
+ * Version:     1.1.0
  * Author:      Brad Parbs
  * Author URI:  https://bradparbs.com/
  * License:     GPLv2
- * Text Domain: draft
+ * Text Domain: colors
  * Domain Path: /lang/
  *
  * @package colors
@@ -14,12 +14,14 @@
 
 namespace Colors;
 
-use WP_Query;
+add_action( 'plugins_loaded', __NAMESPACE__ . '\\disable_colors' );
 
-// Add new dashboard widget with list of draft posts.
-add_action(
-	'plugins_loaded',
-	function () {
+/**
+ * Disable admin color schemes.
+ */
+function disable_colors() {
+
+	if ( apply_filters( 'colors_should_disable_admin_colors', true ) ) {
 		remove_action( 'admin_color_scheme_picker', 'admin_color_scheme_picker' );
 	}
-);
+}
