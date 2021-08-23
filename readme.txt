@@ -15,7 +15,7 @@ Disable admin color schemes for all users.
 
 == Availiable filters ==
 
-`colors_should_disable_admin_colors` - Whether or not to disable admin color schemes, defaults to true.
+colors_should_disable_admin_colors - Whether or not to disable admin color schemes, defaults to true.
 
 == Changelog ==
 
