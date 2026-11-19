@@ -6,7 +6,7 @@ A WordPress plugin to disable admin color schemes.
 
 Disable the admin color schemes for all users.
 
-## Availiable filters
+## Available filters
 
 `colors_should_disable_admin_colors` - Whether or not to disable admin color schemes, defaults to true.
 
